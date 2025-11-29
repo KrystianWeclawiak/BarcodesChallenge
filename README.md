@@ -37,7 +37,7 @@ To run these scripts, you need **Python 3.x** and the following external librari
 
 ```bash
 pip install pyzbar pillow python-barcode
-
+```
 
 *(Note: On Linux, you may also need to install the zbar shared library, e.g., `sudo apt-get install libzbar0`)*
 
