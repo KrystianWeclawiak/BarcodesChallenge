@@ -4,7 +4,6 @@
 **Author:** Krystian Węcławiak  
 **Date:** 29.11.2025  
 **Platform:** [Blue Team Labs Online](https://blueteamlabs.online/)
-
 ---
 
 ## Challenge Overview
@@ -25,7 +24,6 @@ This is the main script used to solve the challenge.
 This script was created as a "Proof of Concept" to reverse-engineer the challenge creator's logic.
 - **Function:** It demonstrates how the original dataset was likely generated.
 - **Logic:** It takes a plaintext string, converts characters to split ASCII digits (using `enumerate` and `ord`), and generates individual Code128 barcodes for each digit.
-
 ---
 
 ## Installation & Usage
@@ -48,7 +46,6 @@ Ensure the dataset images are in a folder named `./Barcode_World`.
 ```bash
 python barcode_world_solver.py
 ```
-
 -----
 
 ## Technical Analysis
@@ -67,7 +64,6 @@ The raw output from the barcodes appeared as a sequence of numbers (e.g., `['6',
   * **3, 2** → `32` → ASCII **'Space'**
 
 The solver reconstructs these pairs into integers and converts them using `chr()` to retrieve the plaintext history of barcodes, which contained the flag.
-
 -----
 
 
