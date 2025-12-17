@@ -24,8 +24,7 @@ This is the main script used to solve the challenge.
 This script was created as a "Proof of Concept" to reverse-engineer the challenge creator's logic.
 - **Function:** It demonstrates how the original dataset was likely generated.
 - **Logic:** It takes a plaintext string, converts characters to split ASCII digits (using `enumerate` and `ord`), and generates individual Code128 barcodes for each digit.
----
-
+  
 ## Installation & Usage
 
 ### Prerequisites
@@ -46,7 +45,6 @@ Ensure the dataset images are in a folder named `./Barcode_World`.
 ```bash
 python barcode_world_solver.py
 ```
------
 
 ## Technical Analysis
 
